@@ -7,12 +7,12 @@ const diamond = generator(25, 2, 0.05);
 
 const data = [...new Array(mapWidth).fill(new Array(mapHeight).fill(0))]
   .map((arr: number[], x: number) => arr.map((val: number, y: number) => {
-    return y == 0 ? 0 :
-      (y < 6) ? Math.random() > (y-2)/4 ? 1 : 2 :
-      redstone(y) ? 11 :
-      gold(y) ? 9 :
-      diamond(y) ? 10 :
-      2;
+    return y == 0 ? 3 :
+      (y < 6) ? Math.random() > (y-2)/4 ? 2 : 1 :
+      redstone(y) ? 75 :
+      gold(y) ? 48 :
+      diamond(y) ? 74 :
+      1;
   }));
 
 export default data;

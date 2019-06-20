@@ -8,7 +8,9 @@ import TileMap from './objects/tile-map';
 // @ts-ignore
 import pickaxe from '../assets/pickaxe.png';
 // @ts-ignore
-import spritesheet from '../assets/spritesheet2.png'
+//import spritesheet from '../assets/spritesheet2.png';
+import spritesheet from '../assets/minetex.png';
+
 
 import mapData, { mapWidth, mapHeight } from '../assets/map-data';
 
