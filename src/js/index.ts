@@ -1,6 +1,7 @@
 import { Game } from './engine/engine';
 import Pointer from './objects/pointer';
 import FPSCounter from './objects/fps-counter';
+// @ts-ignore
 import pickaxe from '../assets/pickaxe.png';
 
 const game = new Game();

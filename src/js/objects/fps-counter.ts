@@ -11,10 +11,6 @@ export default class FPSCounter implements GameObject {
     });
   }
 
-  async loadImage(path: string){
-    this.image = await loadImage(path);
-  }
-
   draw(ctx: CanvasRenderingContext2D): void {
     ctx.fillText(String(avg(this.fps)).slice(0,4), this.x, this.y);
   }
