@@ -1,9 +1,9 @@
 export const mapWidth = 120;
-export const mapHeight = 27;
+export const mapHeight = 20;
 
-const redstone = generator(22, 7, 0.025);
-const gold = generator(17, 10, 0.02);
-const diamond = generator(25, 2, 0.05);
+const redstone = generator(mapHeight-5, 7, 0.025);
+const gold = generator(mapHeight-5, 10, 0.02);
+const diamond = generator(mapHeight-1, 2, 0.05);
 
 const data = [...new Array(mapWidth).fill(new Array(mapHeight).fill(0))]
   .map((arr: number[], x: number) => arr.map((val: number, y: number) => {

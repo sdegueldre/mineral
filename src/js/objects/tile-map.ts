@@ -4,7 +4,7 @@ import TileData from './tile-data';
 
 export default class TileMap implements GameObject {
   public x = 0;
-  public y = 500;
+  public y = 140;
   private canvas: HTMLCanvasElement;
   constructor(sheet: SpriteSheet, data: TileData) {
     const canvas = this.canvas = document.createElement('canvas');

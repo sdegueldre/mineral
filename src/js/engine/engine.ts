@@ -10,6 +10,10 @@ export class Game {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     const ctx = this.ctx;
+    ctx.scale(2,2);
+    ctx.webkitImageSmoothingEnabled = false;
+    ctx.mozImageSmoothingEnabled = false;
+    ctx.imageSmoothingEnabled = false;
   }
 
   get ctx(){
