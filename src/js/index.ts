@@ -22,6 +22,13 @@ document.body.appendChild(game.canvas);
     new SpriteSheet(16, 16, await loadImage(spritesheet)),
     new TileData(mapWidth, mapHeight, mapData)
   );
+  window.addEventListener('wheel', (e) => {
+    let counter = 0;
+    const interval = window.setInterval(() => {
+      tileMap.x += e.deltaY*2;
+      counter++ > 15 && window.clearInterval(interval);
+    }, 10)
+  });
   game.addObject(tileMap);
 
   let toggle = 0;
