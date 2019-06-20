@@ -1,9 +1,7 @@
-import GameObject from './game-object';
-
-type timestamp = number;
+import { timestamp, GameObject } from './types';
 
 export class Game {
-  public canvas;
+  public canvas: HTMLCanvasElement;
   private playing = false;
   private objects: GameObject[] = [];
   private lastUpdate: timestamp;

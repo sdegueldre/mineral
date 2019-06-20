@@ -1,4 +1,4 @@
-import GameObject from '../engine/game-object';
+import { GameObject } from '../engine/types';
 
 export default class FPSCounter implements GameObject {
   public x = 50;

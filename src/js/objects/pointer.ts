@@ -1,4 +1,4 @@
-import GameObject from '../engine/game-object';
+import { GameObject } from '../engine/types';
 import { loadImage } from '../engine/engine';
 
 export default class Pointer implements GameObject {
