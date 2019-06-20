@@ -10,7 +10,6 @@ export class Game {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     const ctx = this.ctx;
-    //ctx.scale(4,4);
   }
 
   get ctx(){
