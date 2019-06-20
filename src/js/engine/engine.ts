@@ -5,7 +5,7 @@ export class Game {
   private playing = false;
   private objects: GameObject[] = [];
   private lastUpdate: timestamp;
-  constructor(options?: any){
+  constructor(){
     const canvas = this.canvas = document.createElement('canvas');
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
