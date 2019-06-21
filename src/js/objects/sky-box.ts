@@ -1,7 +1,7 @@
 import { GameObject, timestamp } from '../engine/types';
 
 
-export default class TileMap implements GameObject {
+export default class SkyBox implements GameObject {
   public x = 0;
   public y = 0;
   private time = 0;
