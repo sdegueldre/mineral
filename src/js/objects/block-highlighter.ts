@@ -13,8 +13,8 @@ export default class BlockHighlighter implements GameObject {
     const x = (~~((this.x - this.tileMap.x%this.tileMap.tileSize.x)/this.tileMap.tileSize.x))*this.tileMap.tileSize.x + this.tileMap.x%this.tileMap.tileSize.x;
     const y = (~~((this.y - this.tileMap.y%this.tileMap.tileSize.y)/this.tileMap.tileSize.y))*this.tileMap.tileSize.y + this.tileMap.y%this.tileMap.tileSize.y;
     ctx.save();
-    ctx.fillStyle = 'hsla(50, 100%, 50%, 0.3)';
-    ctx.fillRect(x, y, this.tileMap.tileSize.x, this.tileMap.tileSize.y);
+    ctx.strokeStyle = 'hsla(50, 100%, 50%, 0.5)';
+    ctx.strokeRect(x-0.5, y-0.5, this.tileMap.tileSize.x+0.5, this.tileMap.tileSize.y+0.5);
     ctx.restore();
   }
 
