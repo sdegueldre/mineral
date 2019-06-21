@@ -5,8 +5,10 @@ import TileData from './tile-data';
 export default class TileMap implements GameObject {
   public x = 0;
   public y = 140;
+  public tileSize: {x: number, y: number};
   private canvas: HTMLCanvasElement;
   constructor(sheet: SpriteSheet, data: TileData) {
+    this.tileSize = {x: sheet.spriteWidth, y: sheet.spriteHeight};
     const canvas = this.canvas = document.createElement('canvas');
     canvas.width = sheet.spriteWidth * data.width;
     canvas.height = sheet.spriteHeight * data.height;

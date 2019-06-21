@@ -5,6 +5,7 @@ import SpriteSheet from './objects/sprite-sheet';
 import TileData from './objects/tile-data';
 import TileMap from './objects/tile-map';
 import SkyBox from './objects/sky-box';
+import BlockHighlighter from './objects/block-highlighter';
 
 // @ts-ignore
 import pickaxe from '../assets/pickaxe.png';
@@ -38,7 +39,9 @@ document.body.appendChild(game.canvas);
   // window.addEventListener('click', () => {
   //   ++toggle%2 ? game.pause() : game.play();
   // });
-  game.addObject(new Pointer(pickaxe));
+  const pointer = new Pointer(pickaxe);
+  game.addObject(new BlockHighlighter(pointer, tileMap));
+  game.addObject(pointer);
   game.addObject(new FPSCounter(600));
 
 
