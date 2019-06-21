@@ -12,7 +12,7 @@ export default class FPSCounter implements GameObject {
   }
 
   draw(ctx: CanvasRenderingContext2D): void {
-    ctx.fillText(String(avg(this.fps)).slice(0,4), this.x, this.y);
+    ctx.fillText(String(avg(this.fps)).slice(0,4), this.x + 12, this.y);
   }
 
   tick(dt: number): void{

@@ -4,7 +4,7 @@ import { loadImage } from '../engine/engine';
 export default class Pointer implements GameObject {
   public x = 50;
   public y = 50;
-  private anchorX = 16;
+  private anchorX = 2.5;
   private anchorY = 12;
   private image: HTMLImageElement;
 
