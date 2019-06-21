@@ -4,6 +4,7 @@ import FPSCounter from './objects/fps-counter';
 import SpriteSheet from './objects/sprite-sheet';
 import TileData from './objects/tile-data';
 import TileMap from './objects/tile-map';
+import SkyBox from './objects/sky-box';
 
 // @ts-ignore
 import pickaxe from '../assets/pickaxe.png';
@@ -17,6 +18,8 @@ import mapData, { mapWidth, mapHeight } from '../assets/map-data';
 const game = new Game();
 document.body.appendChild(game.canvas);
 (async () => {
+
+  game.addObject(new SkyBox());
 
   const tileMap = new TileMap(
     new SpriteSheet(16, 16, await loadImage(spritesheet)),
