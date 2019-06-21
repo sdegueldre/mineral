@@ -11,8 +11,8 @@ export default class Pointer implements GameObject {
   constructor(path: string) {
     this.loadImage(path);
     window.addEventListener('mousemove', (e) => {
-      this.x = e.clientX;
-      this.y = e.clientY;
+      this.x = e.clientX/2;
+      this.y = e.clientY/2;
     });
   }
 

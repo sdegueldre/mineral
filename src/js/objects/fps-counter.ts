@@ -6,8 +6,8 @@ export default class FPSCounter implements GameObject {
   private fps = [60];
   constructor(private nbFrames: number = 60) {
     window.addEventListener('mousemove', (e) => {
-      this.x = e.clientX;
-      this.y = e.clientY;
+      this.x = e.clientX/2;
+      this.y = e.clientY/2;
     });
   }
 

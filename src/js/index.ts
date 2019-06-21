@@ -31,10 +31,10 @@ document.body.appendChild(game.canvas);
   });
   game.addObject(tileMap);
 
-  let toggle = 0;
-  window.addEventListener('click', () => {
-    ++toggle%2 ? game.pause() : game.play();
-  });
+  // let toggle = 0;
+  // window.addEventListener('click', () => {
+  //   ++toggle%2 ? game.pause() : game.play();
+  // });
   game.addObject(new Pointer(pickaxe));
   game.addObject(new FPSCounter(600));
 
